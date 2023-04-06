@@ -1,0 +1,7 @@
+<div>
+    <input type="text" #box placeholder="Введіть інформацію для генерування QR" style="width: 40%">
+    <button mat-raised-button (click)="getValue(box.value)" >Згенерувати</button>
+    <p>Ваш QR-код:  
+      <qrcode [qrdata]="myQR" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+    </p>
+  </div>
