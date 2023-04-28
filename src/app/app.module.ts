@@ -1,30 +1,40 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { QRCodeModule } from 'angularx-qrcode';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomePageComponent } from './home-page/home-page.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
 import { MenuPageComponent } from './menu-page/menu-page.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { MainPageComponent } from './main-page/main-page.component';
+import { ReservationPageComponent } from './reservation-page/reservation-page.component';
+import { LoyaltyprogramPageComponent } from './loyaltyprogram-page/loyaltyprogram-page.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent,
     AdminPageComponent,
     MenuPageComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MainPageComponent,
+    ReservationPageComponent,
+    LoyaltyprogramPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     QRCodeModule,
     BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
