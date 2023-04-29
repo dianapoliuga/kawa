@@ -1,10 +1,34 @@
-<div class="grid-container">
-    <div class="item1">12</div>
+<mat-toolbar class="navbar1">
+    <div class="item1"><a class='header-items'routerLink="/home"><img class="logoImg" src="assets/img/logoAngular.png" alt="logo"></a></div>
     <div class="item2">
         <div>
-            <a routerLink="/menu">Меню</a>
-            <a routerLink="/reservation">Резервація столів</a>
-            <a routerLink="/loyalty-program">Програма лояльності</a>
+            <span><a class='header-items' routerLink="/menu">Меню</a></span>
+            <span><a class='header-items' routerLink="/reservation">Резервація столів</a></span>
+            <span><a class='header-items' routerLink="/loyalty-program">Програма лояльності</a></span>
         </div>
     </div>
-</div>
+</mat-toolbar>
+
+
+<!-- <mat-toolbar class="sidebar1">
+    <mat-toolbar-row>
+        <button mat-icon-button>
+            <mat-icon (click)="sidenav.toggle();">menu</mat-icon>
+        </button>
+        <a class='header-items'routerLink="/home"><img class="logoImg" src="assets/img/logoAngular.png" alt="logo"></a>
+    </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+    <mat-sidenav mode="over" #sidenav>
+        <mat-nav-list>
+            <a mat-list-item>Меню</a>
+            <a mat-list-item>Резервація столів</a>
+            <a mat-list-item>Програма лояльності</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div style="height: 88vh;">
+
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container> -->

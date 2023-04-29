@@ -1,0 +1,29 @@
+.logoImg {
+    width: 100px;
+    display:flex;
+    align-items: center
+}
+
+mat-grid-tile {
+    background: #F5F8DE;
+    grid-gap: 0ch;
+  }
+
+.navbar1 {
+    background: #F5F8DE;
+    justify-content: space-between;
+}
+
+span {
+    padding-right: 1rem;
+    font-size: 20px;
+}
+
+.header-items {
+    all: unset;
+    color: #4C4444;
+}
+
+.header-items:hover {
+    cursor: pointer;
+  }
