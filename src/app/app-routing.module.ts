@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoyaltyprogramPageComponent } from './loyaltyprogram-page/loyaltyprogram-page.component';
-import { MainPageComponent } from './main-page/main-page.component';
-import { MenuPageComponent } from './menu-page/menu-page.component';
-import { ReservationPageComponent } from './reservation-page/reservation-page.component';
+import { LoyaltyprogramPageComponent } from './Pages/loyaltyprogram-page/loyaltyprogram-page.component';
+import { MainPageComponent } from './Pages/main-page/main-page.component';
+import { MenuPageComponent } from './Pages/menu-page/menu-page.component';
+import { ReservationPageComponent } from './Pages/reservation-page/reservation-page.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},

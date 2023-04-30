@@ -16,13 +16,14 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AdminPageComponent } from './admin-page/admin-page.component';
-import { MenuPageComponent } from './menu-page/menu-page.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { MainPageComponent } from './main-page/main-page.component';
-import { ReservationPageComponent } from './reservation-page/reservation-page.component';
-import { LoyaltyprogramPageComponent } from './loyaltyprogram-page/loyaltyprogram-page.component';
+import { AdminPageComponent } from './Pages/admin-page/admin-page.component';
+import { MenuPageComponent } from './Pages/menu-page/menu-page.component';
+import { HeaderComponent } from './Components/header/header.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import { MainPageComponent } from './Pages/main-page/main-page.component';
+import { ReservationPageComponent } from './Pages/reservation-page/reservation-page.component';
+import { LoyaltyprogramPageComponent } from './Pages/loyaltyprogram-page/loyaltyprogram-page.component';
+
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { LoyaltyprogramPageComponent } from './loyaltyprogram-page/loyaltyprogra
     FooterComponent,
     MainPageComponent,
     ReservationPageComponent,
-    LoyaltyprogramPageComponent
+    LoyaltyprogramPageComponent,
+
   ],
   imports: [
     BrowserModule,

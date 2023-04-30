@@ -1,7 +1,3 @@
-.main {
-    position: right;
-}
-
 h3 {
     font-weight: 300;
     font-size: 28px;
@@ -30,9 +26,4 @@ h3 {
     align-self: center;
     /* background-color: red; */
     /* text-align: center; */
-}
-
-.rightDiv {
-    /* background-color: aquamarine; */
-    justify-self: end;
 }

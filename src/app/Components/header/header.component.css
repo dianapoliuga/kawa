@@ -11,6 +11,8 @@ mat-grid-tile {
 
 .navbar1 {
     background: #F5F8DE;
+    display: flex;
+
     justify-content: space-between;
 }
 
@@ -28,3 +30,9 @@ span {
     cursor: pointer;
   }
 
+.items {
+    /* background-color: rgb(89, 255, 0); */
+    /* display: flex;
+    justify-content: space-between;
+    width: 40vw; */
+}
