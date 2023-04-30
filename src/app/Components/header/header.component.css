@@ -12,13 +12,13 @@ mat-grid-tile {
 .navbar1 {
     background: #F5F8DE;
     display: flex;
-
     justify-content: space-between;
 }
 
 span {
     padding-right: 1rem;
     font-size: 20px;
+    margin-left: 40px;
 }
 
 .header-items {
@@ -30,9 +30,3 @@ span {
     cursor: pointer;
   }
 
-.items {
-    /* background-color: rgb(89, 255, 0); */
-    /* display: flex;
-    justify-content: space-between;
-    width: 40vw; */
-}

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminPageComponent } from './Pages/admin-page/admin-page.component';
 import { LoyaltyprogramPageComponent } from './Pages/loyaltyprogram-page/loyaltyprogram-page.component';
 import { MainPageComponent } from './Pages/main-page/main-page.component';
 import { MenuPageComponent } from './Pages/menu-page/menu-page.component';
@@ -10,7 +11,8 @@ const routes: Routes = [
   {path: 'home', component: MainPageComponent},
   {path: 'menu', component: MenuPageComponent},
   {path: 'reservation', component: ReservationPageComponent},
-  {path: 'loyalty-program', component: LoyaltyprogramPageComponent}
+  {path: 'loyalty-program', component: LoyaltyprogramPageComponent},
+  {path: 'admin', component: AdminPageComponent}
 ];
 
 @NgModule({

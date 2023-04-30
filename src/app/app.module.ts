@@ -50,7 +50,8 @@ import { LoyaltyprogramPageComponent } from './Pages/loyaltyprogram-page/loyalty
     MatListModule,
     MatTableModule,
     MatButtonModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
