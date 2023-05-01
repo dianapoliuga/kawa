@@ -11,6 +11,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 88px;
+    min-height: 90vh;
 }
 
 .leftDiv {
