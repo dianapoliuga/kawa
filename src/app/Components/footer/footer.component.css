@@ -3,6 +3,10 @@ footer {
     color: #4C4444;
     height: 210px;
     margin: auto;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
 }
 
 .main {
@@ -72,7 +76,15 @@ footer {
     grid-gap: 10px;
 }
 
-h4 {
+.admins {
+    all: unset;
+}
+
+.admins:hover {
+    cursor: pointer;
+  }
+
+.bigText {
     font-weight:400;
     font-size: 22px;
 }
