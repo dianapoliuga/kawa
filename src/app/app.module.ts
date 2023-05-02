@@ -10,6 +10,8 @@ import {MatTableModule} from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatCardModule} from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -23,6 +25,8 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { MainPageComponent } from './Pages/main-page/main-page.component';
 import { ReservationPageComponent } from './Pages/reservation-page/reservation-page.component';
 import { LoyaltyprogramPageComponent } from './Pages/loyaltyprogram-page/loyaltyprogram-page.component';
+import { DrinkMenuComponent } from './Components/drink-menu/drink-menu.component';
+import { EatMenuComponent } from './Components//eat-menu/eat-menu.component';
 
 
 
@@ -36,6 +40,8 @@ import { LoyaltyprogramPageComponent } from './Pages/loyaltyprogram-page/loyalty
     MainPageComponent,
     ReservationPageComponent,
     LoyaltyprogramPageComponent,
+    DrinkMenuComponent,
+    EatMenuComponent,
 
   ],
   imports: [
@@ -51,7 +57,9 @@ import { LoyaltyprogramPageComponent } from './Pages/loyaltyprogram-page/loyalty
     MatTableModule,
     MatButtonModule,
     MatButtonToggleModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatCardModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

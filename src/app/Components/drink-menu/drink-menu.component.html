@@ -1,0 +1,20 @@
+<div class="drinkGrid">
+    <div class="drinkGrid-topButton">
+        
+    </div>
+    <div class="drinkGrid-hotDrink">
+        <mat-card class="drinkGrid-hotDrink-items" *ngFor="let drink of drinkmenuData">
+            <img class="cacaoimg" [src]="drink.photo" mat-card-image >
+            <mat-card-content class="drinkGrid-hotDrink-items-content">
+                <p>{{drink.cardTitle}}</p>
+                <p>{{drink.price + '' + drink.currency}}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="drinkGrid-bottomButton">
+
+    </div>
+    <div class="drinkGrid-coldDrink">
+
+    </div>
+</div>

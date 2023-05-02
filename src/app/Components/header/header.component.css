@@ -23,10 +23,13 @@ span {
 
 .header-items {
     all: unset;
-    color: #4C4444;
 }
 
 .header-items:hover {
     cursor: pointer;
-  }
+}
+
+.header-main-items {
+    color: #4C4444;
+}
 
