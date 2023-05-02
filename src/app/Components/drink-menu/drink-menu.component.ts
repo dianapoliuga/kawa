@@ -16,7 +16,7 @@ interface DrinksMenu {
 })
 export class DrinkMenuComponent{
   drinkmenuData:any;
-  url: string = '/assets/json/drinkmenu.json';
+  url: string = '/assets/json/drinks.json';
 
   constructor(private http: HttpClient) {
   }
@@ -26,4 +26,5 @@ export class DrinkMenuComponent{
       this.drinkmenuData = res;
     });
   }
+  
 }

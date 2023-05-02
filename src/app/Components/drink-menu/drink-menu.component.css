@@ -2,18 +2,66 @@
     width: 174px;
 }
 
+.drinkGrid {
+    /* margin: 221px; */
+    width:60vw;
+    margin: 0 auto;
+}
+
 .drinkGrid-hotDrink-items {
-    width: 190px;
-    height: 272px;
+    /* width: 190px;
+    height: 272px; */
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
     border-radius: 35px;
-    background-color: rgb(102, 230, 43);
+    /* background-color: rgb(102, 230, 43); */
+    justify-self: center;
+    display: grid;
+}
+
+.drinkGrid-hotDrink-items-content {
+    /* justify-self: center;
+    align-items: center; */
+    text-align: center;
+    margin-top: 10px;
+
+    /* place-items: center; */
 }
 
 .drinkGrid-hotDrink {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 2fr);
     grid-column-gap: 56px;
     grid-row-gap: 37px;
-    place-content: center;
+    /* place-content: center; */
+}
+
+.cardPhoto {
+    padding: 8px;
+}
+
+.drinkGrid-coldDrink-items {
+    /* width: 190px;
+    height: 272px; */
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 35px;
+    /* background-color: rgb(102, 230, 43); */
+    justify-self: center;
+    display: grid;
+}
+
+.drinkGrid-coldDrink-items-content {
+    /* justify-self: center;
+    align-items: center; */
+    text-align: center;
+    margin-top: 10px;
+
+    /* place-items: center; */
+}
+
+.drinkGrid-coldDrink {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-column-gap: 56px;
+    grid-row-gap: 37px;
+    /* place-content: center; */
 }

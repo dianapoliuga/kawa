@@ -10,13 +10,16 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   color='#4C4444';
-  updateColor(id: string) {
-    // this.color = '#9A9C8A';
+
+  resetColor() {
     const test2 = document.querySelectorAll<HTMLElement>(`.header-main-items`);
     test2[0].style.color = '#4C4444';
     test2[1].style.color = '#4C4444';
     test2[2].style.color = '#4C4444';
+  }
 
+  updateColor(id: string) {
+    this.resetColor();
     const test = document.querySelectorAll<HTMLElement>(`#${id}`);
     test[0].style.color = '#9A9C8A';
   }

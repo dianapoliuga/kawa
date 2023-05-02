@@ -3,11 +3,11 @@
         
     </div>
     <div class="drinkGrid-hotDrink">
-        <mat-card class="drinkGrid-hotDrink-items" *ngFor="let drink of drinkmenuData">
-            <img class="cacaoimg" [src]="drink.photo" mat-card-image >
-            <mat-card-content class="drinkGrid-hotDrink-items-content">
-                <p>{{drink.cardTitle}}</p>
-                <p>{{drink.price + '' + drink.currency}}</p>
+        <mat-card class="drinkGrid-hotDrink-items" *ngFor="let drink of drinkmenuData.hotDrinks">
+            <img class="cardPhoto" [src]="drink.photo" mat-card-image >
+            <mat-card-content>
+                <p class="drinkGrid-hotDrink-items-content">{{drink.cardTitle}}</p>
+                <p class="drinkGrid-hotDrink-items-content">{{drink.price + '' + drink.currency}}</p>
             </mat-card-content>
         </mat-card>
     </div>
@@ -15,6 +15,12 @@
 
     </div>
     <div class="drinkGrid-coldDrink">
-
+        <mat-card class="drinkGrid-coldDrink-items" *ngFor="let drink of drinkmenuData.coldDrinks">
+            <img class="cardPhoto" [src]="drink.photo" mat-card-image >
+            <mat-card-content>
+                <p class="drinkGrid-coldDrink-items-content">{{drink.cardTitle}}</p>
+                <p class="drinkGrid-coldDrink-items-content">{{drink.price + '' + drink.currency}}</p>
+            </mat-card-content>
+        </mat-card>
     </div>
 </div>
