@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  color='#4C4444';
+  // color='#4C4444';
 
   resetColor() {
     const test2 = document.querySelectorAll<HTMLElement>(`.header-main-items`);

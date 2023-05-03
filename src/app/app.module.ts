@@ -26,7 +26,8 @@ import { MainPageComponent } from './Pages/main-page/main-page.component';
 import { ReservationPageComponent } from './Pages/reservation-page/reservation-page.component';
 import { LoyaltyprogramPageComponent } from './Pages/loyaltyprogram-page/loyaltyprogram-page.component';
 import { DrinkMenuComponent } from './Components/drink-menu/drink-menu.component';
-import { EatMenuComponent } from './Components//eat-menu/eat-menu.component';
+import { EatMenuComponent } from './Components/eat-menu/eat-menu.component';
+import { MenuButtonComponent } from './Components/menu-button/menu-button.component';
 
 
 
@@ -42,7 +43,7 @@ import { EatMenuComponent } from './Components//eat-menu/eat-menu.component';
     LoyaltyprogramPageComponent,
     DrinkMenuComponent,
     EatMenuComponent,
-
+    MenuButtonComponent
   ],
   imports: [
     BrowserModule,

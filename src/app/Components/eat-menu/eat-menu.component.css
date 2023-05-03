@@ -1,7 +1,7 @@
 .eatGrid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    margin-top: 37px;
+    /* margin-top: 37px; */
     margin-bottom: 80px;
 }
 

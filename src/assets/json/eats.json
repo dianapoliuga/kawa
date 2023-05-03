@@ -12,7 +12,7 @@
         "id": 2,
         "photo": "assets/img/cupcake.png",
         "cardTitle": "Кекс",
-        "cardText": "без начинки/шоколадний/фруктовий",
+        "cardText": "б/начинки/шоколадний/фруктовий",
         "price": 45,
         "currency": "₴"  
       },  

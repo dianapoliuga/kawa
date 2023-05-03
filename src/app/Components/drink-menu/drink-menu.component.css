@@ -1,11 +1,7 @@
-.cacaoimg {
-    width: 174px;
-}
-
 .drinkGrid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    margin-top: 37px;
+    /* margin-top: 37px; */
     margin-bottom: 80px;
 }
 
@@ -58,7 +54,7 @@
     margin-top: 37px;
 }
 
-.drinkGrid-topButton-top {
+/* .drinkGrid-topButton-top {
     border: 0;
     width: 223px;
     height: 35px;
@@ -80,7 +76,7 @@
     color: #9DD016;
     grid-column-start: 7;
     grid-column-end: 9;
-}
+} */
 
 .drinkGrid-topButton-bottom {
     border: 0;
@@ -112,12 +108,12 @@
     margin-top: 37px;
 }
 
-.drinkGrid-topButton {
+/* .drinkGrid-topButton {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 22px;
-    /* margin-top: 37px; */
-}
+    margin-top: 37px;
+} */
 
 .drinkGrid-topButton-b {
     display: grid;

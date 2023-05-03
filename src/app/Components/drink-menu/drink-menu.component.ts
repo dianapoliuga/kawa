@@ -19,8 +19,10 @@ export class DrinkMenuComponent{
   drinkmenuData:any;
   url: string = '/assets/json/drinks.json';
 
-  constructor(private http: HttpClient, private router: Router) {
-  }
+  constructor(
+    private http: HttpClient, 
+    private router: Router
+    ) { }
 
   ngOnInit() {
     this.http.get(this.url).subscribe(res => {
@@ -28,7 +30,7 @@ export class DrinkMenuComponent{
     });
   }
   
-  goToEats(pageName:string):void {
-    this.router.navigate([`${pageName}`]);
-  }
+  // goToEats(pageName:string):void {
+  //   this.router.navigate([`${pageName}`]);
+  // }
 }

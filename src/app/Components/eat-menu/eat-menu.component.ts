@@ -20,8 +20,9 @@ export class EatMenuComponent {
   eatmenuData:any;
   url: string = '/assets/json/eats.json';
 
-  constructor(private http: HttpClient, private router: Router) {
-  }
+  constructor(private http: HttpClient, 
+    private router: Router
+    ) { }
 
   ngOnInit() {
     this.http.get(this.url).subscribe(res => {

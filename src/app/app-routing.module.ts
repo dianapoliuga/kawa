@@ -11,12 +11,12 @@ import { DrinkMenuComponent } from './Components/drink-menu/drink-menu.component
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: MainPageComponent},
-  {path: 'menu', component: MenuPageComponent},
+  {path: 'menu/drinks', component: MenuPageComponent},
   {path: 'reservation', component: ReservationPageComponent},
   {path: 'loyalty-program', component: LoyaltyprogramPageComponent},
   {path: 'admin', component: AdminPageComponent},
-  {path: 'eat', component: EatMenuComponent},
-  {path: 'drink', component: DrinkMenuComponent},
+  {path: 'menu/dishes', component: EatMenuComponent},
+  // {path: 'menu/drink', component: DrinkMenuComponent},
 ];
 
 @NgModule({
