@@ -14,29 +14,30 @@ export class MenuButtonComponent {
   constructor(private router: Router) {
   }
 
-  goToEats(pageName:string):void {
-    this.router.navigate([`${pageName}`]);
-  }
+  // goToEats(pageName:string):void {
+  //   this.router.navigate([`${pageName}`]);
+  // }
 
-  goToDrinks(pageName:string):void {
-    this.router.navigate([`${pageName}`]);
-  }
+  // goToDrinks(pageName:string):void {
+  //   this.router.navigate([`${pageName}`]);
+  // }
 
-  resetColor() {
-    const test2 = document.querySelectorAll<HTMLElement>(`.drinkGrid-topButton-top`);
-    test2[0].style.color = '#FFFFFF';
-    test2[0].style.backgroundColor = '#9DD016';
-    test2[1].style.color = '#9DD016';
-    test2[1].style.backgroundColor = '#FFFFFF';
-  }
+  // resetBtnColor() {
+  //   const test2 = document.querySelectorAll<HTMLElement>(`.drinkGrid-topButton-top`);
+  //   test2[1].style.color = '#9DD016';
+  //   test2[1].style.backgroundColor = '#FFFFFF';
+  //   test2[0].style.color = '#9DD016';
+  //   test2[0].style.backgroundColor = '#FFFFFF';
 
-  updateColor(id: string) {
-    this.resetColor();
-    const test = document.querySelectorAll<HTMLElement>(`#${id}`);
-    test[0].style.color = '#9DD016';
-    test[0].style.backgroundColor = '#FFFFFF'
-    test[1].style.color = '#FFFFFF';
-    test[1].style.backgroundColor = '#9DD016'
-  }
+   
+  // }
+
+  // updateBtnColor(id: string) {
+  //   this.resetBtnColor();
+  //   let test = document.querySelectorAll<HTMLElement>(`#${id}`);
+  //   test[0].style.color = '#FFFFFF';
+  //   test[0].style.backgroundColor = '#9DD016';
+  //   console.log(test[0]);
+  // }
 
 }

@@ -30,7 +30,7 @@ export class DrinkMenuComponent{
     });
   }
   
-  // goToEats(pageName:string):void {
-  //   this.router.navigate([`${pageName}`]);
-  // }
+  goToEats(pageName:string):void {
+    this.router.navigate([`${pageName}`]);
+  }
 }
