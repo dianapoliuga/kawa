@@ -1,1 +1,34 @@
-<p>eat-menu works!</p>
+<div class="eatGrid">
+    <div class="eatGridHelper">
+        <div class="eatGrid-topButton">
+            <button class="eatGrid-topButton-top" (click)="goToDrinks('drink')">Напої</button>
+            <button class="eatGrid-topButton-top">Їжа</button>
+        </div>
+        <div class="eatGrid-topButton-b">
+            <button class="eatGrid-topButton-bottom">Випічка</button>
+        </div>
+        <div class="eatGrid-hoteat">
+            <mat-card class="eatGrid-hoteat-items" *ngFor="let eat of eatmenuData.baking">
+                <img class="cardPhoto" [src]="eat.photo" mat-card-image >
+                <mat-card-content>
+                    <p class="eatGrid-hoteat-items-content">{{eat.cardTitle}}</p>
+                    <p class="eatGrid-hoteat-items-content">{{eat.cardText}}</p>
+                    <p class="eatGrid-hoteat-items-content">{{eat.price + '' + eat.currency}}</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div class="eatGrid-bottomButton">
+            <button class="eatGrid-bottomButton-bottom">Закуски</button>
+        </div>
+        <div class="eatGrid-coldeat">
+            <mat-card class="eatGrid-coldeat-items" *ngFor="let eat of eatmenuData.dishes">
+                <img class="cardPhoto" [src]="eat.photo" mat-card-image >
+                <mat-card-content>
+                    <p class="eatGrid-coldeat-items-content">{{eat.cardTitle}}</p>
+                    <p class="eatGrid-coldeat-items-content">{{eat.cardText}}</p>
+                    <p class="eatGrid-coldeat-items-content">{{eat.price + '' + eat.currency}}</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>

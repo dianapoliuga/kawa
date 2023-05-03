@@ -1,0 +1,131 @@
+.eatGrid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 37px;
+    margin-bottom: 80px;
+}
+
+.eatGridHelper {
+    grid-column-start: 3;
+    grid-column-end: 11;
+}
+
+.eatGrid-hoteat-items {
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 35px;
+    justify-self: center;
+    display: grid;
+}
+
+.eatGrid-hoteat-items-content:nth-child(2) {
+    font-size: 8px;
+}
+
+.eatGrid-coldeat-items-content:nth-child(2) {
+    font-size: 8px;
+}
+
+.eatGrid-hoteat-items-content {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.eatGrid-hoteat {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-column-gap: 56px;
+    grid-row-gap: 37px;
+    margin-top: 37px;
+}
+
+.cardPhoto {
+    padding: 8px;
+    /* width: 174px; */
+}
+
+.eatGrid-coldeat-items {
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 35px;
+    justify-self: center;
+    display: grid;
+}
+
+.eatGrid-coldeat-items-content {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.eatGrid-coldeat {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-column-gap: 56px;
+    grid-row-gap: 37px;
+    margin-top: 37px;
+}
+
+.eatGrid-topButton-top {
+    border: 0;
+    width: 223px;
+    height: 35px;
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.eatGrid-topButton-top:nth-child(1) {
+    background: #ffffff;
+    color: #9DD016;
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.eatGrid-topButton-top:nth-child(2) {
+    background: #9DD016;
+    color: #FFFFFF;
+    grid-column-start: 7;
+    grid-column-end: 9;
+}
+
+.eatGrid-topButton-bottom {
+    border: 0;
+    width: 221px;
+    height: 25px;
+    background: #C2CFA0;
+    color: #FFFFFF;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+    grid-column-start: 6;
+    grid-column-end: 8;
+}
+
+.eatGrid-bottomButton-bottom {
+    border: 0;
+    width: 221px;
+    height: 25px;
+    background: #C2CFA0;
+    color: #FFFFFF;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+    grid-column-start: 6;
+    grid-column-end: 8;
+}
+
+.eatGrid-bottomButton {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 37px;
+}
+
+.eatGrid-topButton {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 22px;
+    /* margin-top: 37px; */
+}
+
+.eatGrid-topButton-b {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 37px;
+}

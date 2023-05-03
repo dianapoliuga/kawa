@@ -1,0 +1,79 @@
+{
+    "baking": [
+      {  
+        "id": 1,
+        "photo": "assets/img/macarons.png",
+        "cardTitle": "Макаронс",
+        "cardText": "фісташка/малина/кокос",
+        "price": 40,
+        "currency": "₴"  
+      },  
+      {  
+        "id": 2,
+        "photo": "assets/img/cupcake.png",
+        "cardTitle": "Кекс",
+        "cardText": "без начинки/шоколадний/фруктовий",
+        "price": 45,
+        "currency": "₴"  
+      },  
+      {  
+        "id": 3,  
+        "photo": "assets/img/croissant.png",
+        "cardTitle": "Круасан",
+        "cardText": "б/начинки/шоколадний/фруктовий",
+        "price": "60/65",
+        "currency": "₴"  
+      },  
+      {  
+        "id": 4,  
+        "photo": "assets/img/minicake.png",
+        "cardTitle": "Міні-кейк",
+        "cardText": "малиновий/карамельний",
+        "price": 90,
+        "currency": "₴"  
+      },  
+      {  
+        "id": 5,  
+        "photo": "assets/img/cheesecake.png", 
+        "cardTitle": "Чізкейк",
+        "cardText": "класичний/шоколадний/лимонний",
+        "price": 140,
+        "currency": "₴"  
+      },
+      {  
+        "id": 6,  
+        "photo": "assets/img/napoleon.png",
+        "cardTitle": "Наполеон",
+        "cardText": "класичний/веганський",
+        "price": "150/170",
+        "currency": "₴"  
+      }
+    ],
+    "dishes": [
+      {  
+        "id": 1,
+        "photo": "assets/img/salad.png",
+        "cardTitle": "Салат",
+        "cardText": "з креветками/з куркою/веганський",
+        "price": 95,
+        "currency": "₴"  
+      },  
+      {  
+        "id": 2,
+        "photo": "assets/img/tart.png",
+        "cardTitle": "Тарт",
+        "cardText": "з лососем/з куркою/з овочами",
+        "price": 150,
+        "currency": "₴"  
+      },  
+      {  
+        "id": 3,  
+        "photo": "assets/img/sandwich.png",
+        "cardTitle": "Сендвіч",
+        "cardText": "з лососем/з ростбіфом/веганський",
+        "price": 160,
+        "currency": "₴"  
+      }
+    ]
+  }
+   

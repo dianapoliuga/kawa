@@ -1,26 +1,32 @@
 <div class="drinkGrid">
-    <div class="drinkGrid-topButton">
-        
-    </div>
-    <div class="drinkGrid-hotDrink">
-        <mat-card class="drinkGrid-hotDrink-items" *ngFor="let drink of drinkmenuData.hotDrinks">
-            <img class="cardPhoto" [src]="drink.photo" mat-card-image >
-            <mat-card-content>
-                <p class="drinkGrid-hotDrink-items-content">{{drink.cardTitle}}</p>
-                <p class="drinkGrid-hotDrink-items-content">{{drink.price + '' + drink.currency}}</p>
-            </mat-card-content>
-        </mat-card>
-    </div>
-    <div class="drinkGrid-bottomButton">
-
-    </div>
-    <div class="drinkGrid-coldDrink">
-        <mat-card class="drinkGrid-coldDrink-items" *ngFor="let drink of drinkmenuData.coldDrinks">
-            <img class="cardPhoto" [src]="drink.photo" mat-card-image >
-            <mat-card-content>
-                <p class="drinkGrid-coldDrink-items-content">{{drink.cardTitle}}</p>
-                <p class="drinkGrid-coldDrink-items-content">{{drink.price + '' + drink.currency}}</p>
-            </mat-card-content>
-        </mat-card>
+    <div class="drinkGridHelper">
+        <div class="drinkGrid-topButton">
+            <button class="drinkGrid-topButton-top">Напої</button>
+            <button (click)="goToEats('eat')" class="drinkGrid-topButton-top">Їжа</button>
+        </div>
+        <div class="drinkGrid-topButton-b">
+            <button class="drinkGrid-topButton-bottom">Гарячі напої</button>
+        </div>
+        <div class="drinkGrid-hotDrink">
+            <mat-card class="drinkGrid-hotDrink-items" *ngFor="let drink of drinkmenuData.hotDrinks">
+                <img class="cardPhoto" [src]="drink.photo" mat-card-image >
+                <mat-card-content>
+                    <p class="drinkGrid-hotDrink-items-content">{{drink.cardTitle}}</p>
+                    <p class="drinkGrid-hotDrink-items-content">{{drink.price + '' + drink.currency}}</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div class="drinkGrid-bottomButton">
+            <button class="drinkGrid-bottomButton-bottom">Холодна напої</button>
+        </div>
+        <div class="drinkGrid-coldDrink">
+            <mat-card class="drinkGrid-coldDrink-items" *ngFor="let drink of drinkmenuData.coldDrinks">
+                <img class="cardPhoto" [src]="drink.photo" mat-card-image >
+                <mat-card-content>
+                    <p class="drinkGrid-coldDrink-items-content">{{drink.cardTitle}}</p>
+                    <p class="drinkGrid-coldDrink-items-content">{{drink.price + '' + drink.currency}}</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
     </div>
 </div>
