@@ -28,6 +28,8 @@
     grid-column-gap: 56px;
     grid-row-gap: 37px;
     margin-top: 37px;
+    /* width: auto; */
+
 }
 
 .cardPhoto {

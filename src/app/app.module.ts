@@ -12,6 +12,7 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -28,6 +29,7 @@ import { LoyaltyprogramPageComponent } from './Pages/loyaltyprogram-page/loyalty
 import { DrinkMenuComponent } from './Components/drink-menu/drink-menu.component';
 import { EatMenuComponent } from './Components/eat-menu/eat-menu.component';
 import { MenuButtonComponent } from './Components/menu-button/menu-button.component';
+import { RegistrationComponent } from './Components/registration/registration.component';
 
 
 
@@ -43,7 +45,8 @@ import { MenuButtonComponent } from './Components/menu-button/menu-button.compon
     LoyaltyprogramPageComponent,
     DrinkMenuComponent,
     EatMenuComponent,
-    MenuButtonComponent
+    MenuButtonComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
@@ -61,6 +64,8 @@ import { MenuButtonComponent } from './Components/menu-button/menu-button.compon
     MatSnackBarModule,
     MatCardModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
