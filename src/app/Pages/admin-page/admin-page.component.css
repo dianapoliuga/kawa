@@ -6,15 +6,12 @@
   } */
 
 .generationGrid {
-  display: grid;
-  margin-top: 87px;
-  /* margin-bottom: 251px; */
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 22px;
-  /* height: 100vh; */
-  row-gap: 38px;
-  justify-items: center;
-  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 25px;
+  margin: 175px 0;
 }
 
 /* .generationGridTop {
@@ -54,8 +51,7 @@
 }
 
 .generationOutput {
-  grid-column-start: 5;
-  grid-column-end: 9;
+  min-height: 260px;
 }
 
 .generatedQR {

@@ -1,6 +1,6 @@
 .logoImg {
     width: 100px;
-    display:flex;
+    display: flex;
     align-items: center
 }
 
@@ -17,13 +17,14 @@
 
 .header-items {
     all: unset;
+    transition: 0.2s linear;
 }
 
 .header-items:hover {
     cursor: pointer;
 }
 
-.header-main-items {
+.header-main-items:not(:last-of-type) {
     all: unset;
     color: #4C4444;
     padding-right: 1rem;
@@ -33,17 +34,15 @@
     /* background-color: #001eff; */
     height: 100%;
     /* align-self: center; */
-    
-
 }
 
 .userlogo {
     /* background: #14ead5; */
-    
+
     object-fit: cover;
     height: inherit;
     width: inherit;
-    
+
     /* align-self: center; */
 }
 
@@ -69,3 +68,20 @@
     height: 24px;
     width: 24px;
 } */
+
+.account-icon {
+    height: 24px;
+    display: flex;
+}
+
+.active {
+    color: #9a9c8a;
+}
+
+path {
+    transition: 0.2s linear;
+}
+
+.active path {
+    fill: #9a9c8a;
+}

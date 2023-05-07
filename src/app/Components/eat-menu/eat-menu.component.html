@@ -1,4 +1,3 @@
-<!-- <app-menu-button></app-menu-button> -->
 <div class="eatGrid">
     <div class="eatGridHelper">
         <!-- <div class="eatGrid-topButton">
@@ -9,12 +8,12 @@
             <button class="eatGrid-topButton-bottom">Випічка</button>
         </div>
         <div class="eatGrid-hoteat">
-            <mat-card class="eatGrid-hoteat-items" *ngFor="let eat of eatmenuData.baking">
-                <img class="cardPhoto" [src]="eat.photo" mat-card-image >
+            <mat-card class="eatGrid-hoteat-items" *ngFor="let eat of eatMenu?.baking">
+                <img class="cardPhoto" [src]="eat?.photo" mat-card-image >
                 <mat-card-content>
-                    <p class="eatGrid-hoteat-items-content">{{eat.cardTitle}}</p>
-                    <p class="eatGrid-hoteat-items-content">{{eat.cardText}}</p>
-                    <p class="eatGrid-hoteat-items-content">{{eat.price + '' + eat.currency}}</p>
+                    <p class="eatGrid-hoteat-items-content">{{eat?.cardTitle}}</p>
+                    <p class="eatGrid-hoteat-items-content">{{eat?.cardText}}</p>
+                    <p class="eatGrid-hoteat-items-content">{{eat?.price + '' + eat?.currency}}</p>
                 </mat-card-content>
             </mat-card>
         </div>
@@ -22,12 +21,12 @@
             <button class="eatGrid-bottomButton-bottom">Закуски</button>
         </div>
         <div class="eatGrid-coldeat">
-            <mat-card class="eatGrid-coldeat-items" *ngFor="let eat of eatmenuData.dishes">
-                <img class="cardPhoto" [src]="eat.photo" mat-card-image >
+            <mat-card class="eatGrid-coldeat-items" *ngFor="let eat of eatMenu?.dishes">
+                <img class="cardPhoto" [src]="eat?.photo" mat-card-image >
                 <mat-card-content>
-                    <p class="eatGrid-coldeat-items-content">{{eat.cardTitle}}</p>
-                    <p class="eatGrid-coldeat-items-content">{{eat.cardText}}</p>
-                    <p class="eatGrid-coldeat-items-content">{{eat.price + '' + eat.currency}}</p>
+                    <p class="eatGrid-coldeat-items-content">{{eat?.cardTitle}}</p>
+                    <p class="eatGrid-coldeat-items-content">{{eat?.cardText}}</p>
+                    <p class="eatGrid-coldeat-items-content">{{eat?.price + '' + eat?.currency}}</p>
                 </mat-card-content>
             </mat-card>
         </div>

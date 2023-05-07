@@ -1,4 +1,4 @@
 <div class="drinkGrid-topButton">
-    <button class="drinkGrid-topButton-top" id="drinks" (click)="invokeFunctionsDrinks()" >Напої</button>
-    <button  class="drinkGrid-topButton-top" id="dishes" (click)="invokeFunctionsEats()">Їжа</button>
+    <a class="drinkGrid-topButton-top" [routerLink]="['/menu/drinks']" [routerLinkActive]="'active'" id="drinks">Напої</a>
+    <a class="drinkGrid-topButton-top" [routerLink]="['/menu/dishes']" [routerLinkActive]="'active'" id="dishes">Їжа</a>
 </div>
