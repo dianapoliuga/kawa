@@ -1,15 +1,18 @@
-import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import {Router} from '@angular/router';
+import { Component, Input } from '@angular/core';
 
-interface EatsMenu {  
-  id: Number;  
-  photo: String;
-  cardTitle: String;  
-  cardText: String;
-  price: Number;  
-  currency: String;  
-}  
+export interface FoodEntity {
+  id: number;
+  photo: string;
+  cardTitle: string;
+  cardText: string;
+  price: number;
+  currency: string;
+}
+
+export interface EatsMenu {
+  baking: FoodEntity[];
+  dishes: FoodEntity[];
+}
 
 @Component({
   selector: 'app-eat-menu',
@@ -17,20 +20,5 @@ interface EatsMenu {
   styleUrls: ['./eat-menu.component.css']
 })
 export class EatMenuComponent {
-  eatmenuData:any;
-  url: string = '/assets/json/eats.json';
-
-  constructor(private http: HttpClient, 
-    private router: Router
-    ) { }
-
-  ngOnInit() {
-    this.http.get(this.url).subscribe(res => {
-      this.eatmenuData = res;
-    });
-  }
-
-  goToDrinks(pageName:string):void {
-    this.router.navigate([`${pageName}`]);
-  }
+  @Input() public eatMenu: EatsMenu;
 }
