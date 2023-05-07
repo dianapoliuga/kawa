@@ -1,15 +1,18 @@
 <mat-toolbar class="navbar1">
-    <div class="item1"><a class='header-items'routerLink="/home" (click)="resetColor()"><img class="logoImg" src="assets/img/logoAngular.png" alt="logo"></a></div>
+    <div class="item1">
+        <a class='header-items'routerLink="/home" (click)="resetColor()"><img class="logoImg" src="assets/img/logoAngular.png" alt="logo"></a>
+    </div>
     <div class="item2">
         <div class="items">
-            <span class='header-main-items' id="menu"><a class='header-items' routerLink="/menu/drinks" (click)="updateColor('menu')">Меню</a></span>
-            <span class='header-main-items' id="reserv"><a class='header-items' routerLink="/reservation" (click)="updateColor('reserv')">Резервація столів</a></span>
-            <span class='header-main-items' id="loyal"><a class='header-items' routerLink="/loyalty-program" (click)="updateColor('loyal')">Програма лояльності</a></span>
+            <div class='header-main-items' id="menu"><a class='header-items' routerLink="/menu/drinks" (click)="updateColor('menu')">Меню</a></div>
+            <div class='header-main-items' id="reserv"><a class='header-items' routerLink="/reservation" (click)="updateColor('reserv')">Резервація столів</a></div>
+            <div class='header-main-items' id="loyal"><a class='header-items' routerLink="/loyalty-program" (click)="updateColor('loyal')">Програма лояльності</a></div>
+            <img class="userlogo" src="assets/img/userProfile.png">
         </div>
     </div>
 </mat-toolbar>
 
-<!-- 
+<!-- <a class='header-main-items' id="userpicture"  routerLink="/signin"></a>
 <mat-toolbar class="sidebar1">
     <mat-toolbar-row>
         <button mat-icon-button (click)="sidenav.toggle();">

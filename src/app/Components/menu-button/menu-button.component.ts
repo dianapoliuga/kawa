@@ -8,20 +8,44 @@ import { style } from '@angular/animations';
   styleUrls: ['./menu-button.component.css']
 })
 export class MenuButtonComponent {
-  // color1='#FFFFFF'
-  // color2='#9DD016'
-
+  
   constructor(private router: Router) {
   }
 
-  // goToEats(pageName:string):void {
-  //   this.router.navigate([`${pageName}`]);
-  // }
+  goToEats():void {
+    this.router.navigate(['/menu/dishes']);
+    // this.changeColorBtn1();
+  }
 
-  // goToDrinks(pageName:string):void {
-  //   this.router.navigate([`${pageName}`]);
-  // }
+  changeColorBtn1() {
+      const test2 = document.querySelectorAll<HTMLElement>(`.drinkGrid-topButton-top`);
+      test2[1].style.color = '#FFFFFF';
+      test2[1].style.backgroundColor = '#9DD016';
+      test2[0].style.color = '#9DD016';
+      test2[0].style.backgroundColor = '#FFFFFF';
+  }
+    
+  goToDrinks():void {
+    this.router.navigate(['/menu/drinks']);
+    // this.changeColorBtn0();
+  }
 
+  changeColorBtn0() {
+    const test2 = document.querySelectorAll<HTMLElement>(`.drinkGrid-topButton-top`);
+    test2[0].style.color = '#FFFFFF';
+    test2[0].style.backgroundColor = '#9DD016';
+    test2[1].style.color = '#9DD016';
+    test2[1].style.backgroundColor = '#FFFFFF';
+  }
+
+  invokeFunctionsEats() {
+    this.goToEats();
+    this.changeColorBtn1();
+  }
+  invokeFunctionsDrinks() {
+    this.goToDrinks();
+    this.changeColorBtn0();
+  }
   // resetBtnColor() {
   //   const test2 = document.querySelectorAll<HTMLElement>(`.drinkGrid-topButton-top`);
   //   test2[1].style.color = '#9DD016';

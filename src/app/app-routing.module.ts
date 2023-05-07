@@ -7,6 +7,7 @@ import { MenuPageComponent } from './Pages/menu-page/menu-page.component';
 import { ReservationPageComponent } from './Pages/reservation-page/reservation-page.component';
 import {EatMenuComponent} from './Components/eat-menu/eat-menu.component';
 import { DrinkMenuComponent } from './Components/drink-menu/drink-menu.component';
+import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'loyalty-program', component: LoyaltyprogramPageComponent},
   {path: 'admin', component: AdminPageComponent},
   {path: 'menu/dishes', component: EatMenuComponent},
+  {path: 'signin', component: SignInPageComponent},
   // {path: 'menu/drink', component: DrinkMenuComponent},
 ];
 

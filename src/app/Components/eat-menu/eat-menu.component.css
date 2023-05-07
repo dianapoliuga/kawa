@@ -1,7 +1,7 @@
 .eatGrid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    margin-top: 37px;
+    /* margin-top: 37px; */
     margin-bottom: 80px;
 }
 
@@ -40,7 +40,6 @@
 
 .cardPhoto {
     padding: 8px;
-    /* width: 174px; */
 }
 
 .eatGrid-coldeat-items {
@@ -63,7 +62,7 @@
     margin-top: 37px;
 }
 
-.eatGrid-topButton-top {
+/* .eatGrid-topButton-top {
     border: 0;
     width: 223px;
     height: 35px;
@@ -85,7 +84,7 @@
     color: #FFFFFF;
     grid-column-start: 7;
     grid-column-end: 9;
-}
+} */
 
 .eatGrid-topButton-bottom {
     border: 0;

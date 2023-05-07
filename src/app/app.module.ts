@@ -13,7 +13,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -30,6 +30,7 @@ import { DrinkMenuComponent } from './Components/drink-menu/drink-menu.component
 import { EatMenuComponent } from './Components/eat-menu/eat-menu.component';
 import { MenuButtonComponent } from './Components/menu-button/menu-button.component';
 import { RegistrationComponent } from './Components/registration/registration.component';
+import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
 
 
 
@@ -46,7 +47,8 @@ import { RegistrationComponent } from './Components/registration/registration.co
     DrinkMenuComponent,
     EatMenuComponent,
     MenuButtonComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    SignInPageComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +67,7 @@ import { RegistrationComponent } from './Components/registration/registration.co
     MatCardModule,
     HttpClientModule,
     ReactiveFormsModule,
-    
+      MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
