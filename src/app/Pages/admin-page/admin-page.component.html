@@ -1,9 +1,3 @@
-<div class="generationGrid">
-  <!-- <div class="generationGridTop"> -->
-    <input class="generation-input" type="text" #box placeholder="Введіть інформацію для генерування QR">
-    <button class="generation-button" (click)="getValue(box.value)" >Згенерувати</button>
-  <!-- </div> -->
-  <div class="generationOutput">
-    <qrcode class="generatedQR" [qrdata]="myQR" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
-  </div>
-</div>
+<app-admin-buttons></app-admin-buttons>
+<app-clients-table [hidden]="showQRGenerator | async"></app-clients-table>
+<app-qr-code [hidden]="!(showQRGenerator | async)"></app-qr-code>

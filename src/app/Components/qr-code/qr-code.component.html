@@ -1,0 +1,7 @@
+<div class="generationGrid">
+      <input class="generation-input" type="text" #box placeholder="Введіть інформацію для генерування QR">
+      <button class="generation-button" (click)="getValue(box.value)" >Згенерувати</button>
+    <div class="generationOutput">
+      <qrcode class="generatedQR" [qrdata]="myQR" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+    </div>
+  </div>

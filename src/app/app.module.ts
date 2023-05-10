@@ -30,7 +30,13 @@ import { DrinkMenuComponent } from './Components/drink-menu/drink-menu.component
 import { EatMenuComponent } from './Components/eat-menu/eat-menu.component';
 import { MenuButtonComponent } from './Components/menu-button/menu-button.component';
 import { RegistrationComponent } from './Components/registration/registration.component';
-import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
+
+import { QrCodeComponent } from './Components/qr-code/qr-code.component';
+import { SignInComponent } from './Components/sign-in/sign-in.component';
+import { SignInPageComponent } from './Pages/sign-in-page/sign-in-page.component';
+import { AdminButtonsComponent } from './Components/admin-buttons/admin-buttons.component';
+import { ClientsTableComponent } from './Components/clients-table/clients-table.component';
+// import { AdminButtonsComponent } from './Components/admin-buttons/'
 
 
 
@@ -48,7 +54,12 @@ import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
     EatMenuComponent,
     MenuButtonComponent,
     RegistrationComponent,
-    SignInPageComponent
+    QrCodeComponent,
+    SignInComponent,
+    SignInPageComponent,
+    AdminButtonsComponent,
+    ClientsTableComponent,
+    
   ],
   imports: [
     BrowserModule,

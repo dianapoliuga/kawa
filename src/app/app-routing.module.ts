@@ -5,7 +5,9 @@ import { LoyaltyprogramPageComponent } from './Pages/loyaltyprogram-page/loyalty
 import { MainPageComponent } from './Pages/main-page/main-page.component';
 import { MenuPageComponent } from './Pages/menu-page/menu-page.component';
 import { ReservationPageComponent } from './Pages/reservation-page/reservation-page.component';
-import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
+import { SignInComponent } from './Components/sign-in/sign-in.component';
+import { ClientsTableComponent } from './Components/clients-table/clients-table.component';
+import { QrCodeComponent } from './Components/qr-code/qr-code.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -31,9 +33,26 @@ const routes: Routes = [
   },
   { path: 'reservation', component: ReservationPageComponent },
   { path: 'loyalty-program', component: LoyaltyprogramPageComponent },
-  { path: 'admin', component: AdminPageComponent },
-  { path: 'signin', component: SignInPageComponent },
-  // {path: 'menu/drink', component: DrinkMenuComponent},
+  { path: 'signin', component: SignInComponent },
+  {
+    path: 'admin',
+    children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'clients',
+      },
+      {
+        matcher: (url: UrlSegment[]) => {
+          if (['qr', 'clients'].includes(url.at(-1).path)) {
+            return { consumed: url };
+          }
+          return null;
+        },
+        component: AdminPageComponent
+      }
+    ]
+  },
 ];
 
 @NgModule({
