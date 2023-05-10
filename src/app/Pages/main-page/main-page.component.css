@@ -8,10 +8,10 @@
 }
 
 .mainGrid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-column-gap: 88px;
-    /* min-height: 90vh; */
+    display: flex;
+    /* grid-template-columns: 2fr 1fr; */
+    column-gap: 88px;
+    min-height: 75vh;
     /* height: 100%; */
 }
 
