@@ -9,10 +9,8 @@
 
 .mainGrid {
     display: flex;
-    /* grid-template-columns: 2fr 1fr; */
     column-gap: 88px;
     min-height: 75vh;
-    /* height: 100%; */
 }
 
 .leftDiv {

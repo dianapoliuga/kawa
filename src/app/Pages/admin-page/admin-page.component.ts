@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { UrlSegment } from '@angular/router';
 import { filter, map } from 'rxjs';
-import { MenuService } from 'src/app/menu.service';
-import { Router } from '@angular/router';
 
 
 @Component({

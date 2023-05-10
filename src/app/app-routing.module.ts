@@ -8,6 +8,8 @@ import { ReservationPageComponent } from './Pages/reservation-page/reservation-p
 import { SignInComponent } from './Components/sign-in/sign-in.component';
 import { ClientsTableComponent } from './Components/clients-table/clients-table.component';
 import { QrCodeComponent } from './Components/qr-code/qr-code.component';
+import { ReservationApprovedComponent } from './Components/reservation-approved/reservation-approved.component';
+import {RegistrationComponent} from './Components/registration/registration.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -53,6 +55,8 @@ const routes: Routes = [
       }
     ]
   },
+  { path: 'reservation/approved', component: ReservationApprovedComponent },
+  { path: 'login', component: RegistrationComponent },
 ];
 
 @NgModule({
