@@ -26,13 +26,20 @@
    grid-column-end: 10;
    width: 190px;
    height: 34.65px;
-   border: 1px solid #E6E4E4;
-   background-color: #9DD016;
-   color: white;
    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
    border-radius: 50px;
+   color: #9DD016;
+   background-color: white;
+   border: 0.5px solid #E6E4E4;
+   transition: 1s;
 }
-  
+
+.generation-button:hover {
+  background-color: #9DD016;
+  color: white;
+  border: none;
+}
+
 .generationOutput {
   min-height: 260px;
 }
