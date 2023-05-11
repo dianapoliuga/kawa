@@ -1,1 +1,19 @@
-<p>sign-in works!</p>
+<div class="main-container-registration">
+    <p class="main-container-registration-title">Введіть дані для входу:</p>
+    <div class="main-container-registration-form">
+        <div class="main-container-registration-form-field">
+            <div class="main-container-registration-form-login">
+                <p class="main-container-registration-form-p">Логін:</p>
+                <input class="main-container-registration-form-input" type="text" #box placeholder="Введіть своє ім'я">
+            </div>
+            <div class="main-container-registration-form-password">
+                <p class="main-container-registration-form-p">Пароль:</p>
+            <input class="main-container-registration-form-input" type="text" #box placeholder="Введіть номер телефону користувача">
+            </div>
+        </div>
+        <div class="main-container-registration-form-button-group">
+            <button class="main-container-registration-form-button-input" [routerLink]="['/account']">Увійти</button>
+            <button class="main-container-registration-form-button-input" [routerLink]="['/login']">Зареєструватись</button>
+        </div>
+    </div>
+</div>

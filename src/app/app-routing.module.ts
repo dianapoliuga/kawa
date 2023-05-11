@@ -11,6 +11,7 @@ import { QrCodeComponent } from './Components/qr-code/qr-code.component';
 import { ReservationApprovedComponent } from './Components/reservation-approved/reservation-approved.component';
 import {RegistrationComponent} from './Components/registration/registration.component';
 import { ProfileComponent } from './Components/profile/profile.component';
+import { SignInPageComponent } from './Pages/sign-in-page/sign-in-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -36,7 +37,7 @@ const routes: Routes = [
   },
   { path: 'reservation', component: ReservationPageComponent },
   { path: 'loyalty-program', component: LoyaltyprogramPageComponent },
-  { path: 'signin', component: SignInComponent },
+  { path: 'signin', component: SignInPageComponent },
   {
     path: 'admin',
     children: [
