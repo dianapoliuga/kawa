@@ -37,6 +37,7 @@ import { SignInPageComponent } from './Pages/sign-in-page/sign-in-page.component
 import { AdminButtonsComponent } from './Components/admin-buttons/admin-buttons.component';
 import { ClientsTableComponent } from './Components/clients-table/clients-table.component';
 import { ReservationApprovedComponent } from './Components/reservation-approved/reservation-approved.component';
+import { ProfileComponent } from './Components/profile/profile.component';
 // import { AdminButtonsComponent } from './Components/admin-buttons/'
 
 
@@ -61,6 +62,7 @@ import { ReservationApprovedComponent } from './Components/reservation-approved/
     AdminButtonsComponent,
     ClientsTableComponent,
     ReservationApprovedComponent,
+    ProfileComponent,
     
   ],
   imports: [

@@ -10,7 +10,7 @@
 .main-container-div-text {
     text-align: center;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .main-container-div-img {
@@ -21,5 +21,6 @@
     margin: 150px 0px;
     grid-column: 2/3;
     display: grid;
-    row-gap: 82px;
+    row-gap: 75px;
+    align-items: center;
 }
