@@ -1,0 +1,64 @@
+.main-container-profile {
+    display: grid;
+    grid-template-columns: repeat(12 1fr);
+    min-height: 75vh;
+}
+
+.main-container-profile-info {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    width: 1197px;
+    height: 718px;
+    margin-top: 105px;
+    margin-bottom: 105px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+}
+
+.aboutUserInfo {
+    display: grid;
+    row-gap: 49px;
+}
+
+.main-container-profile-info-all {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 50px;
+    padding-left: 72px;
+    padding-right: 72px;
+    margin-top: 85px;
+    width: 1018px;
+    height: 299px;
+
+}
+
+.main-container-profile-photo {
+    border-right: 1px solid #C2CFA0;
+    
+
+}
+
+.aboutUserInfo {
+    text-align: center;
+    border-left: 1px solid #C2CFA0;
+    border-right: 1px solid #C2CFA0;
+}
+
+.aboutUserQR {
+    display: grid;
+    flex-direction: column;
+    /* padding: 110px 47px; */
+    justify-items: center;
+    border-left: 1px solid #C2CFA0;
+}
+
+.aboutUserQRPhoto {
+    width: 151px;
+}
+
+.main-container-profile-notification {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
