@@ -18,7 +18,18 @@
 
 .aboutUserInfo {
     display: grid;
-    row-gap: 49px;
+}
+
+.aboutUserInfo p:nth-child(1){
+    align-self: flex-end;
+}
+
+.aboutUserInfo p:nth-child(2){
+    align-self: center;
+}
+
+.aboutUserInfo p:nth-child(3){
+    align-self: flex-start;
 }
 
 .main-container-profile-info-all {
@@ -33,10 +44,14 @@
 
 }
 
+/* .main-container-profile-info-all:nth-child(1) {
+    align-self: center;
+} */
+
 .main-container-profile-photo {
     border-right: 1px solid #C2CFA0;
-    
-
+    display: flex;
+    align-items: center;
 }
 
 .aboutUserInfo {
@@ -47,18 +62,22 @@
 
 .aboutUserQR {
     display: grid;
-    flex-direction: column;
-    /* padding: 110px 47px; */
     justify-items: center;
     border-left: 1px solid #C2CFA0;
+    padding-left: 110px;
+}
+
+.aboutUserQR p {
+    align-self: end;
 }
 
 .aboutUserQRPhoto {
-    width: 151px;
+    width: 200px;
 }
 
 .main-container-profile-notification {
     font-size: 24px;
     font-weight: 400;
     text-align: center;
+    align-items: center;
 }
