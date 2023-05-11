@@ -1,0 +1,82 @@
+[
+    {  
+      "id": 1,
+      "uPhoto": "assets/img/userPhotoGirl.png",
+      "uName": "Анастасія",
+      "uBirth": "08/10/1998",
+      "uNumber": "0678925600",
+      "uBonuses":  149
+    },  
+    {  
+      "id": 2,
+      "uPhoto": "assets/img/userPhotoMen.png",
+      "uName": "Назар",
+      "uBirth": "07/09/1989",
+      "uNumber": "0680128743",
+      "uBonuses":  0  
+    },  
+    {  
+      "id": 3,  
+      "uPhoto": "assets/img/userPhotoGirl.png",
+      "uName": "Анастасія",
+      "uBirth": "08/10/1998",
+      "uNumber": "0678925600",
+      "uBonuses":  149  
+    },  
+    {  
+      "id": 4,  
+      "uPhoto": "assets/img/userPhotoGirl.png",
+      "uName": "Анастасія",
+      "uBirth": "08/10/1998",
+      "uNumber": "0678925600",
+      "uBonuses":  149  
+    },  
+    {  
+      "id": 5,  
+      "uPhoto": "assets/img/userPhotoGirl.png",
+      "uName": "Анастасія",
+      "uBirth": "08/10/1998",
+      "uNumber": "0678925600",
+      "uBonuses":  149  
+    },
+    {  
+      "id": 6,  
+      "uPhoto": "assets/img/userPhotoGirl.png",
+      "uName": "Анастасія",
+      "uBirth": "08/10/1998",
+      "uNumber": "0678925600",
+      "uBonuses":  149  
+    },
+    {  
+      "id": 7,  
+      "uPhoto": "assets/img/userPhotoGirl.png",
+      "uName": "Анастасія",
+      "uBirth": "08/10/1998",
+      "uNumber": "0678925600",
+      "uBonuses":  149  
+    },
+    {  
+      "id": 8,  
+      "uPhoto": "assets/img/userPhotoGirl.png",
+      "uName": "Анастасія",
+      "uBirth": "08/10/1998",
+      "uNumber": "0678925600",
+      "uBonuses":  149  
+    },
+    {  
+      "id": 9,  
+      "uPhoto": "assets/img/userPhotoGirl.png",
+      "uName": "Анастасія",
+      "uBirth": "08/10/1998",
+      "uNumber": "0678925600",
+      "uBonuses":  149  
+    },
+    {  
+      "id": 10,  
+      "uPhoto": "assets/img/userPhotoGirl.png",
+      "uName": "Анастасія",
+      "uBirth": "08/10/1998",
+      "uNumber": "0678925600",
+      "uBonuses":  149  
+    }
+]
