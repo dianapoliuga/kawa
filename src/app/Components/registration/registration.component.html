@@ -1,19 +1,18 @@
 <div class="main-container-registration">
-    <!-- <div class="main-container-registration-title"></div> -->
     <p class="main-container-registration-title">Введіть дані для реєстрації:</p>
     <div class="main-container-registration-form">
         <div class="main-container-registration-form-field">
             <div class="main-container-registration-form-name">
             <p class="main-container-registration-form-p">Ім'я:</p>
-            <input class="main-container-registration-form-input" type="text" #box>
+            <input class="main-container-registration-form-input" type="text">
             </div>
             <div class="main-container-registration-form-birth">
                 <p class="main-container-registration-form-p">Дата народження:</p>
-                <input class="main-container-registration-form-input" type="text" #box placeholder="__/__/__">
+                <input class="main-container-registration-form-input" type="text" placeholder="__/__/__">
             </div>
             <div class="main-container-registration-form-phone">
                 <p class="main-container-registration-form-p">Номер телефону:</p>
-            <input class="main-container-registration-form-input" type="text" #box placeholder="(___) ____ __ __">
+            <input class="main-container-registration-form-input" type="text" placeholder="(___) ____ __ __">
             </div>
         </div>
         <button class="main-container-registration-form-button-input" [routerLink]="['/account']">Зареєструватись</button>

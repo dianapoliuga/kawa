@@ -17,66 +17,66 @@
     },  
     {  
       "id": 3,  
-      "uPhoto": "assets/img/userPhotoGirl.png",
-      "uName": "Анастасія",
-      "uBirth": "08/10/1998",
-      "uNumber": "0678925600",
-      "uBonuses":  149  
+      "uPhoto": "assets/img/userPhotoMen.png",
+      "uName": "Тарас",
+      "uBirth": "12/02/1999",
+      "uNumber": "0693457861",
+      "uBonuses":  12  
     },  
     {  
       "id": 4,  
       "uPhoto": "assets/img/userPhotoGirl.png",
-      "uName": "Анастасія",
-      "uBirth": "08/10/1998",
-      "uNumber": "0678925600",
-      "uBonuses":  149  
+      "uName": "Андріана",
+      "uBirth": "13/05/1995",
+      "uNumber": "0983281930",
+      "uBonuses":  29  
     },  
     {  
       "id": 5,  
-      "uPhoto": "assets/img/userPhotoGirl.png",
-      "uName": "Анастасія",
-      "uBirth": "08/10/1998",
-      "uNumber": "0678925600",
-      "uBonuses":  149  
+      "uPhoto": "assets/img/userPhotoMen.png",
+      "uName": "Василь",
+      "uBirth": "2/09/2003",
+      "uNumber": "0972683016",
+      "uBonuses":  56  
     },
     {  
       "id": 6,  
       "uPhoto": "assets/img/userPhotoGirl.png",
-      "uName": "Анастасія",
-      "uBirth": "08/10/1998",
-      "uNumber": "0678925600",
-      "uBonuses":  149  
+      "uName": "Катя",
+      "uBirth": "12/02/2002",
+      "uNumber": "0986304629",
+      "uBonuses":  89  
     },
     {  
       "id": 7,  
       "uPhoto": "assets/img/userPhotoGirl.png",
-      "uName": "Анастасія",
-      "uBirth": "08/10/1998",
-      "uNumber": "0678925600",
-      "uBonuses":  149  
+      "uName": "Наталя",
+      "uBirth": "19/02/2002",
+      "uNumber": "0939536720",
+      "uBonuses":  237  
     },
     {  
       "id": 8,  
       "uPhoto": "assets/img/userPhotoGirl.png",
-      "uName": "Анастасія",
-      "uBirth": "08/10/1998",
-      "uNumber": "0678925600",
-      "uBonuses":  149  
+      "uName": "Артем",
+      "uBirth": "07/09/1999",
+      "uNumber": "0995239178",
+      "uBonuses":  750  
     },
     {  
       "id": 9,  
       "uPhoto": "assets/img/userPhotoGirl.png",
-      "uName": "Анастасія",
-      "uBirth": "08/10/1998",
-      "uNumber": "0678925600",
-      "uBonuses":  149  
+      "uName": "Саша",
+      "uBirth": "07/09/1989",
+      "uNumber": "0685082608",
+      "uBonuses":  48  
     },
     {  
       "id": 10,  
       "uPhoto": "assets/img/userPhotoGirl.png",
-      "uName": "Анастасія",
-      "uBirth": "08/10/1998",
-      "uNumber": "0678925600",
-      "uBonuses":  149  
+      "uName": "Владислав",
+      "uBirth": "07/09/1989",
+      "uNumber": "0982689467",
+      "uBonuses":  230  
     }
 ]

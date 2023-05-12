@@ -13,18 +13,26 @@
       <td mat-cell *matCellDef="let element"> {{element.name}} </td>
     </ng-container>
   
-    <!-- Weight Column -->
+    <!-- Birth date Column -->
     <ng-container matColumnDef="birth">
       <th mat-header-cell *matHeaderCellDef> Дата народження </th>
       <td mat-cell *matCellDef="let element"> {{element.birth}} </td>
     </ng-container>
   
-    <!-- Symbol Column -->
+    <!-- Phone number Column -->
     <ng-container matColumnDef="phoneNumber">
       <th mat-header-cell *matHeaderCellDef> Номер телефону </th>
       <td mat-cell *matCellDef="let element"> {{element.phoneNumber}} </td>
     </ng-container>
   
+    <!-- QR Column
+    <ng-container matColumnDef="phoneNumber">
+      <th mat-header-cell *matHeaderCellDef> Номер телефону </th>
+      <td mat-cell *matCellDef="let element">
+        <qrcode class="generatedQR" [qrdata]="myQR" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+      </td>
+    </ng-container> -->
+
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
