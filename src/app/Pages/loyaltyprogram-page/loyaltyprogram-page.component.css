@@ -7,7 +7,7 @@
 .container-content:nth-child(1) {
     display: flex;
     column-gap: 124px;
-    
+
 }
 
 .container-content-welcome {
@@ -21,13 +21,11 @@
 
 .container-content:nth-child(2) {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     row-gap: 22px;
     text-align: center;
-    padding-left: 243px;
-    padding-right: 243px;
-    padding-top: 97px;
-    padding-bottom:97px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     font-size: 18px;
 }
 
@@ -47,8 +45,8 @@
 
 .rightDiv {
     display: grid;
-    margin-left: 131px;
-    margin-right: 131px;
+    /* margin-left: 131px; */
+    /* margin-right: 131px; */
     margin-top: 92px;
     margin-bottom: 92px;
     align-items: center;
@@ -102,3 +100,93 @@
     border: none;
 }
 
+
+
+.mainPage__slides {
+    /* margin: 100px; */
+    display: block;
+    width: 90vw;
+    height: 40vh;
+    margin: 0 auto;
+    /* margin-top: 150px; */
+}
+
+.slides {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 120px;
+}
+
+.slides__part {
+    width: 20%;
+    height: 100%;
+    position: relative;
+    transition: all 0.5s;
+    /* border-radius: 300px; */
+}
+
+.slides__part:hover {
+    cursor: pointer;
+    width: 50%;
+}
+
+.slides__part:hover .slides__overlay {
+    display: flex;
+    animation: slide__overlay 0.5s forwards;
+}
+
+@keyframes slide__overlay {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.slides__photo {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.slides__overlay {
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 10%, #9CCC65 95%); */
+    background: #C2CFA0;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    display: block;
+    top: 0;
+    transition: 0.5s;
+    display: none;
+    opacity: 0;
+    border-radius: 30px;
+
+}
+
+.slides__title {
+    color: white;
+    display: block;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.slides__description {
+    color: white;
+    margin: 10px;
+    flex-wrap: wrap;
+    width: 600px;
+    font-size: 14px;
+}
+
+.slides__text {
+    align-self: center;
+}

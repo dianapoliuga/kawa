@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-loyaltyprogram-page',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./loyaltyprogram-page.component.css']
 })
 export class LoyaltyprogramPageComponent {
-
+  ngOnInit() {
+    AOS.init();
+  }
 }
