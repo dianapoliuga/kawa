@@ -36,8 +36,9 @@ import { AdminButtonsComponent } from './Components/admin-buttons/admin-buttons.
 import { ClientsTableComponent } from './Components/clients-table/clients-table.component';
 import { ReservationApprovedComponent } from './Components/reservation-approved/reservation-approved.component';
 import { ProfileComponent } from './Components/profile/profile.component';
-
-
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatMenuModule} from '@angular/material/menu';
+import { DateTimePickerModule } from '@syncfusion/ej2-angular-calendars';
 
 @NgModule({
   declarations: [
@@ -80,7 +81,11 @@ import { ProfileComponent } from './Components/profile/profile.component';
     HttpClientModule,
     ReactiveFormsModule,
     MatTabsModule,
-    FormsModule
+    FormsModule,
+    MatDatepickerModule,
+    MatMenuModule,
+    DateTimePickerModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

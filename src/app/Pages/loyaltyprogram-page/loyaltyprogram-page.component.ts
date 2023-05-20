@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import AOS from 'aos';
 
 @Component({
   selector: 'app-loyaltyprogram-page',
@@ -8,6 +7,6 @@ import AOS from 'aos';
 })
 export class LoyaltyprogramPageComponent {
   ngOnInit() {
-    AOS.init();
+    
   }
 }
