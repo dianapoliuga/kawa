@@ -9,10 +9,10 @@
             <div class="main-container-reservation-form-people">
                 <p class="main-container-reservation-form-p">Кількість людей:</p>
                 <div class="people-buttons">
-                    <button class="people-button-choose">1</button>
-                    <button class="people-button-choose">2</button>
-                    <button class="people-button-choose">3</button>
-                    <button class="people-button-choose">4+</button>
+                    <label ><input class="people-button-choose" type="radio" name="buttons">2</label>
+                    <label ><input class="people-button-choose" type="radio" name="buttons">3</label>
+                    <label ><input class="people-button-choose" type="radio" name="buttons">1</label>
+                    <label ><input class="people-button-choose" type="radio" name="buttons">4+</label>
                 </div>
             </div>
             <div class="main-container-reservation-form-birth">
@@ -23,6 +23,7 @@
                 <input class="main-container-reservation-form-input" type="text" placeholder="(___) ____ __ __">
             </div>
         </div>
-        <button class="main-container-reservation-form-button-input" [routerLink]="['/reservation/approved']">Забронювати</button>
+        <button class="main-container-reservation-form-button-input"
+            [routerLink]="['/reservation/approved']">Забронювати</button>
     </div>
 </div>
