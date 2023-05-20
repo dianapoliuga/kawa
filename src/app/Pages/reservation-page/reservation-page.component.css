@@ -76,8 +76,7 @@
 .main-container-reservation-form-people {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    justify-items: center;
     row-gap: 15px;
 }
 

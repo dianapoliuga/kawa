@@ -17,15 +17,12 @@
             </div>
             <div class="main-container-reservation-form-birth">
                 <p class="main-container-reservation-form-p">Оберіть дату:</p>
-                <!-- <input class="main-container-reservation-form-input" matInput [matDatepicker]="picker">
-                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-                <mat-datepicker #picker></mat-datepicker> -->
             </div>
             <div class="main-container-reservation-form-phone">
                 <p class="main-container-reservation-form-p">Номер телефону:</p>
                 <input class="main-container-reservation-form-input" type="text" placeholder="(___) ____ __ __">
             </div>
         </div>
-        <button class="main-container-reservation-form-button-input">Забронювати</button>
+        <button class="main-container-reservation-form-button-input" [routerLink]="['/reservation/approved']">Забронювати</button>
     </div>
 </div>
