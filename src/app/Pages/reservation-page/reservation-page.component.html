@@ -9,14 +9,21 @@
             <div class="main-container-reservation-form-people">
                 <p class="main-container-reservation-form-p">Кількість людей:</p>
                 <div class="people-buttons">
+                    <label ><input class="people-button-choose" type="radio" name="buttons">1</label>
                     <label ><input class="people-button-choose" type="radio" name="buttons">2</label>
                     <label ><input class="people-button-choose" type="radio" name="buttons">3</label>
-                    <label ><input class="people-button-choose" type="radio" name="buttons">1</label>
                     <label ><input class="people-button-choose" type="radio" name="buttons">4+</label>
                 </div>
             </div>
             <div class="main-container-reservation-form-birth">
                 <p class="main-container-reservation-form-p">Оберіть дату:</p>
+                <mat-form-field>
+                    <mat-label>Choose a date</mat-label>
+                    <input matInput [matDatepicker]="picker"[matDatepickerFilter]="dateFilter">
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker startView="year"></mat-datepicker>
+                  </mat-form-field>
             </div>
             <div class="main-container-reservation-form-phone">
                 <p class="main-container-reservation-form-p">Номер телефону:</p>

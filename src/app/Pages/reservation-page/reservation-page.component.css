@@ -1,13 +1,14 @@
 .main-container-reservation {
-    display: grid;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     padding-top: 96px;
     padding-bottom: 252px;
     font-weight: 400;
     row-gap: 44px;
     min-height: 75vh;
+    width: 100vw;
 }
 
 .main-container-reservation-title {
@@ -36,7 +37,7 @@
     align-items: center;
     row-gap: 63px;
     width: 466px;
-    height: 536px;
+    height: 1000px;
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
     border-radius: 35px;
 }
