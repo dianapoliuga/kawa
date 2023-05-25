@@ -39,6 +39,15 @@ import { ProfileComponent } from './Components/profile/profile.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatMenuModule} from '@angular/material/menu';
 import { DateTimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatInputModule } from '@angular/material/input';
+
+// import { AngularFireModule } from '@angular/fire';
+// import { AngularFireAuthModule } from '@angular/fire/auth';
+// import { AngularFirestoreModule } from '@angular/fire/firestore';
+
+// import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -85,7 +94,11 @@ import { DateTimePickerModule } from '@syncfusion/ej2-angular-calendars';
     MatDatepickerModule,
     MatMenuModule,
     DateTimePickerModule,
-    
+    // MatNativeDateModule,
+    // MatInputModule,
+    // AngularFireModule.initializeApp(environment.firebase),
+    // AngularFireAuthModule,
+    // AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
