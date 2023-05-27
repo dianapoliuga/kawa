@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { AuthService } from 'src/app/auth.service';
+import { auth, db, storage } from '../../Config/config';
+
 
 @Component({
   selector: 'app-registration',
@@ -6,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent {
+  constructor (private authService: AuthService) {}
+
+  public onSubmit(phone: string) {
+    this.authService.logIn(phone).subscribe()
+  }
 
 }

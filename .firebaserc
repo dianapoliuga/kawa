@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "diplom-fba51": {
+      "hosting": {
+        "diplom": [
+          "diplom-fba51"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "diplom-fba51"
+  }
+}
