@@ -5,16 +5,17 @@
                 <img src="/assets/img/userPhotoGirl.png" alt="">
             </div>
             <div class="aboutUserInfo">
-                <p>{{login}}</p>
+                <p>{{ currentUser?.displayName ?? currentUser?.email }}</p>
                 <p>08/10/1998</p>
-                <p>{{number}}</p>
+                <p>{{ currentUser?.phoneNumber }}</p>
             </div>
             <div class="aboutUserQR">
-                <p>149 бонусів</p>
+                <p>{{ currentUser?.displayName === 'diana' ? '149' : '0'}}</p>
                 <img class='aboutUserQRPhoto' src="/assets/img/qrNastya.png" alt="">
             </div>
         </div>
         <p class="main-container-profile-notification">Нагадування: не забувайте про наші тематичні вечірки та ігри!
-            <br>*Ви отримаєте індивідуальне запрошення в повідомленні на телефоні.</p>
+            <br>*Ви отримаєте індивідуальне запрошення в повідомленні на телефоні.
+        </p>
     </div>
 </div>

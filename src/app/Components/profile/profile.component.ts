@@ -1,18 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-
+import { Component } from '@angular/core';
+import { Auth } from '@angular/fire/auth';
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
-export class ProfileComponent implements OnInit {
-  login = '';
-  number = '';
-  constructor(private route: ActivatedRoute) {}
+export class ProfileComponent {
+  public currentUser = this.auth.currentUser;
 
-  ngOnInit(): void {
-    this.route.queryParams.subscribe(params => {this.login=params['login'];this.number=params['number']})
-  }
+  constructor(private auth: Auth) { }
 }

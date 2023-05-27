@@ -9,9 +9,10 @@ import { SignInComponent } from './Components/sign-in/sign-in.component';
 import { ClientsTableComponent } from './Components/clients-table/clients-table.component';
 import { QrCodeComponent } from './Components/qr-code/qr-code.component';
 import { ReservationApprovedComponent } from './Components/reservation-approved/reservation-approved.component';
-import {RegistrationComponent} from './Components/registration/registration.component';
+import { RegistrationComponent } from './Components/registration/registration.component';
 import { ProfileComponent } from './Components/profile/profile.component';
 import { SignInPageComponent } from './Pages/sign-in-page/sign-in-page.component';
+import { AuthGuard } from './auth/auth.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -37,7 +38,8 @@ const routes: Routes = [
   },
   { path: 'reservation', component: ReservationPageComponent },
   { path: 'loyalty-program', component: LoyaltyprogramPageComponent },
-  { path: 'signin', component: SignInPageComponent },
+  { path: 'signin', canActivate: [AuthGuard], component: SignInPageComponent },
+  { path: 'login', canActivate: [AuthGuard], component: RegistrationComponent },
   {
     path: 'admin',
     children: [
@@ -58,8 +60,7 @@ const routes: Routes = [
     ]
   },
   { path: 'reservation/approved', component: ReservationApprovedComponent },
-  { path: 'login', component: RegistrationComponent },
-  { path: 'account', component: ProfileComponent}
+  { path: 'account', canActivate: [AuthGuard], component: ProfileComponent }
 ];
 
 @NgModule({
