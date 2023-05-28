@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { AuthService } from 'src/app/auth.service';
-import { auth, db, storage } from '../../Config/config';
-import { BehaviorSubject, Subject, combineLatest, delayWhen, of, switchMap, tap } from 'rxjs';
+import { Subject, combineLatest, of, switchMap, tap } from 'rxjs';
 import { ConfirmationResult } from 'firebase/auth';
 import { Router } from '@angular/router';
-
 
 @Component({
   selector: 'app-registration',
@@ -22,7 +20,6 @@ export class RegistrationComponent {
       switchMap((confirmationResult: ConfirmationResult) => combineLatest([this._submitCode$, of(confirmationResult)])),
       switchMap(([submitCode, confirmationResult]) => confirmationResult.confirm(submitCode)),
       switchMap(() => this.authService.updateUser(name)),
-      tap(() => this.showVerification = false),
       tap(() => this.router.navigate(['/account']))
     ).subscribe()
   }

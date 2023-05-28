@@ -19,7 +19,6 @@ export class SignInComponent {
       tap(() => this.showVerification = true),
       switchMap((confirmationResult: ConfirmationResult) => combineLatest([this._submitCode$, of(confirmationResult)])),
       switchMap(([submitCode, confirmationResult]) => confirmationResult.confirm(submitCode)),
-      tap(() => this.showVerification = false),
       tap(() => this.router.navigate(['/account']))
     ).subscribe()
   }

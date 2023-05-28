@@ -1,12 +1,16 @@
 <mat-toolbar class="navbar1">
     <div class="item1">
-        <a class='header-items' routerLink="/home"  [routerLinkActive]="'active'"><img class="logoImg" src="assets/img/logo.png" alt="logo"></a>
+        <a class='header-items' routerLink="/home" [routerLinkActive]="'active'"><img class="logoImg"
+                src="assets/img/logo.png" alt="logo"></a>
     </div>
     <div class="item2">
         <div class="items">
-            <div class='header-main-items'><a class='header-items' routerLink="/menu" [routerLinkActive]="'active'">Меню</a></div>
-            <div class='header-main-items'><a class='header-items' routerLink="/reservation" [routerLinkActive]="'active'">Резервація столів</a></div>
-            <div class='header-main-items'><a class='header-items' routerLink="/loyalty-program" [routerLinkActive]="'active'">Програма лояльності</a>
+            <div class='header-main-items'><a class='header-items' routerLink="/menu"
+                    [routerLinkActive]="'active'">Меню</a></div>
+            <div class='header-main-items'><a class='header-items' routerLink="/reservation"
+                    [routerLinkActive]="'active'">Резервація столів</a></div>
+            <div class='header-main-items'><a class='header-items' routerLink="/loyalty-program"
+                    [routerLinkActive]="'active'">Програма лояльності</a>
             </div>
             <div class='header-main-items'>
                 <a class='header-items account-icon' [routerLinkActive]="'active'" routerLink="/signin">
@@ -17,6 +21,9 @@
                     </svg>
                 </a>
             </div>
+            <button *ngIf="isLogged$ | async" class='header-main-items' (click)="logOut()">
+                LOGOUT <!-- TODO: FIX -->
+            </button>
         </div>
     </div>
 </mat-toolbar>

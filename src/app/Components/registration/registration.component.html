@@ -4,11 +4,11 @@
         <div class="main-container-registration-form-field">
             <div class="main-container-registration-form-name">
                 <p class="main-container-registration-form-p">Ім'я:</p>
-                <input class="main-container-registration-form-input" type="text">
+                <input class="main-container-registration-form-input" #nameInput type="text">
             </div>
             <div class="main-container-registration-form-birth">
                 <p class="main-container-registration-form-p">Дата народження:</p>
-                <input class="main-container-registration-form-input" type="text" #nameInput placeholder="__/__/__">
+                <input class="main-container-registration-form-input" type="text" placeholder="__/__/__">
             </div>
             <div class="main-container-registration-form-phone">
                 <p class="main-container-registration-form-p">Номер телефону:</p>
@@ -20,7 +20,7 @@
             (click)="onSubmit(phoneInput.value, nameInput.value)">Зареєструватись</button>
         <div class="verification" *ngIf="showVerification">
             <input type="text" #verificationCode>
-            <button (click)="onCodeSubmit(verificationCode)"></button>
+            <button (click)="onCodeSubmit(verificationCode)">Send Code</button>
         </div>
     </div>
 </div>

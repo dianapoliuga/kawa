@@ -1,20 +1,33 @@
 import { Injectable } from '@angular/core';
-import { Auth } from '@angular/fire/auth';
-import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree } from '@angular/router';
-import { Observable } from 'rxjs';
+import { Auth, User } from '@angular/fire/auth';
+import {
+  ActivatedRouteSnapshot,
+  CanActivate,
+  Router,
+  RouterStateSnapshot,
+  UrlTree,
+} from '@angular/router';
+import { Observable, map } from 'rxjs';
+import { AuthService } from '../auth.service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AuthGuard implements CanActivate {
+  constructor(private auth: AuthService, private router: Router) {}
 
-  constructor(private auth: Auth, private router: Router) { }
-
-  public canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | UrlTree {
-    const userHeadToAccounts = state.url.endsWith('accounts');
-    if (userHeadToAccounts) {
-      return Boolean(this.auth.currentUser) ?? this.router.createUrlTree(['/signin']);
-    }
-    return this.auth.currentUser ? this.router.createUrlTree(['/account']) : true;
+  public canActivate(
+    route: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot
+  ): Observable<boolean | UrlTree> {
+    return this.auth.isLogged$.pipe(
+      map((isLogged: boolean) => {
+        const userHeadToAccounts = state.url.endsWith('account');
+        if (userHeadToAccounts) {
+          return isLogged || this.router.createUrlTree(['/signin']);
+        }
+        return !isLogged || this.router.createUrlTree(['/account']);
+      })
+    );
   }
 }
