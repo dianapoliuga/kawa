@@ -6,16 +6,16 @@
             </div>
             <div class="aboutUserInfo">
                 <p>{{ currentUser?.displayName ?? currentUser?.email }}</p>
-                <p>08/10/1998</p>
                 <p>{{ currentUser?.phoneNumber }}</p>
+                <p>{{ currentUser?.displayName === 'diana' ? '149' : '0'}} бонусів</p>
             </div>
             <div class="aboutUserQR">
-                <p>{{ currentUser?.displayName === 'diana' ? '149' : '0'}}</p>
-                <img class='aboutUserQRPhoto' src="/assets/img/qrNastya.png" alt="">
+                <qrcode  class="generatedQR" [qrdata]="currentUser?.phoneNumber"
+                    [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
             </div>
         </div>
         <p class="main-container-profile-notification">Нагадування: не забувайте про наші тематичні вечірки та ігри!
-            <br>*Ви отримаєте індивідуальне запрошення в повідомленні на телефоні.
+            <br>Ви отримаєте індивідуальне запрошення в повідомленні на телефоні.
         </p>
     </div>
 </div>

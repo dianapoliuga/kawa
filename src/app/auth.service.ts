@@ -45,4 +45,5 @@ export class AuthService {
   public updateUser(displayName: string) {
     return updateProfile(this.auth.currentUser, { displayName });
   }
+
 }

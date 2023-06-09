@@ -5,7 +5,6 @@ export interface OurClients {
   id: string;
   birth: string;
   phoneNumber: string;
-  // qr: string;
 }
 
 const ELEMENT_DATA: OurClients[] = [
@@ -27,11 +26,6 @@ const ELEMENT_DATA: OurClients[] = [
   styleUrls: ['./clients-table.component.css']
 })
 export class ClientsTableComponent {
-  // myQR: any;
-  // getValue(val: string) {
-  //   console.warn(val);
-  //   this.myQR = val;
-  // };
   displayedColumns: string[] = ['id', 'name', 'birth', 'phoneNumber'];
   dataSource = ELEMENT_DATA;
 }

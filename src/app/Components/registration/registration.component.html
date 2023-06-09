@@ -20,7 +20,7 @@
             (click)="onSubmit(phoneInput.value, nameInput.value)">Зареєструватись</button>
         <div class="verification" *ngIf="showVerification">
             <input type="text" #verificationCode>
-            <button (click)="onCodeSubmit(verificationCode)">Send Code</button>
+            <button class="verif" (click)="onCodeSubmit(verificationCode)">Send Code</button>
         </div>
     </div>
 </div>
