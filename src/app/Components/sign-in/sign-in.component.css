@@ -26,7 +26,7 @@
 
 .main-container-registration-form-p {
     font-size: 16px;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .main-container-registration-form {
@@ -36,7 +36,7 @@
     align-items: center;
     row-gap: 63px;
     width: 466px;
-    height: 487px;
+    height: 300px;
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
     border-radius: 35px;
 }
@@ -50,11 +50,10 @@
 }
 
 .main-container-registration-form-button-input {
-    width: 242px;
+    width: 170px;
     height: 42px;
     box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.15);
     border-radius: 30px;
-    border: none;
     color: #9DD016;
     background-color: white;
     border: 0.5px solid #E6E4E4;
@@ -71,7 +70,7 @@
 .main-container-registration-form-login {
     display: flex;
     flex-direction: column;
-    row-gap: 9px;
+    row-gap: 15px;
 }
 
 .main-container-registration-form-password {
@@ -87,6 +86,6 @@
 
 .main-container-registration-form-button-group {
     display: flex;
-    flex-direction: column;
-    row-gap: 26px;
+    /* flex-direction: column; */
+    gap: 40px;
 }
