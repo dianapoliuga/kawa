@@ -18,8 +18,9 @@
         </div>
         <button class="main-container-registration-form-button-input"
             (click)="onSubmit(phoneInput.value, nameInput.value)">Зареєструватись</button>
+            
         <div class="verification" *ngIf="showVerification">
-            <input type="text" #verificationCode>
+            <input class="verifInput" type="text" #verificationCode>
             <button class="verif" (click)="onCodeSubmit(verificationCode)">Send Code</button>
         </div>
     </div>

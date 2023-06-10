@@ -13,8 +13,8 @@
                 [routerLink]="['/login']">Зареєструватись</button>
         </div>
         <div class="verification" *ngIf="showVerification">
-            <input type="text" #verificationCode>
-            <button (click)="onCodeSubmit(verificationCode)">Send Code</button>
+            <input class="verifInput" type="text" #verificationCode>
+            <button class="verif" (click)="onCodeSubmit(verificationCode)">Send Code</button>
         </div>
     </div>
 </div>
