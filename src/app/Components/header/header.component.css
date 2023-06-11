@@ -92,6 +92,7 @@ path {
         transition: 0.4s ease-in-out;
         display: flex;
         align-items: start;
+        z-index: 100000;
     }
 
     .menu ul {
