@@ -2,7 +2,7 @@
     <div class="main-container-profile-info">
         <div class="main-container-profile-info-all">
             <div class="main-container-profile-photo">
-                <img src="/assets/img/userPhotoGirl.png" alt="">
+                <img id="girl" src="/assets/img/userPhotoGirl.png" alt="">
             </div>
             <div class="aboutUserInfo">
                 <p>{{ currentUser?.displayName ?? currentUser?.email }}</p>
@@ -10,8 +10,7 @@
                 <p>{{ currentUser?.displayName === 'diana' ? '149' : '0'}} бонусів</p>
             </div>
             <div class="aboutUserQR">
-                <qrcode  class="generatedQR" [qrdata]="currentUser?.phoneNumber"
-                    [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+                <qrcode  class="generatedQR" [qrdata]="currentUser?.phoneNumber" [width]="150" [errorCorrectionLevel]="'M'"></qrcode>
             </div>
         </div>
         <p class="main-container-profile-notification">Нагадування: не забувайте про наші тематичні вечірки та ігри!

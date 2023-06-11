@@ -65,13 +65,59 @@
     align-self: end;
 }
 
-.aboutUserQRPhoto {
-    width: 200px;
-}
-
 .main-container-profile-notification {
     font-size: 24px;
     font-weight: 400;
     text-align: center;
     align-items: center;
+}
+
+
+@media (max-width: 640px) {
+    
+    .main-container-profile-photo {
+        border-right: none;
+    }
+    
+    .aboutUserInfo {
+        border-left: none;
+        border-right: none
+    }
+    
+    .aboutUserQR {
+        border-left: none;
+    }
+
+    #girl {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+    }
+    
+    .main-container-profile-notification {
+        display: none;
+    }
+
+    .main-container-profile-info-all {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 100%;
+        padding: 0;
+        gap: 30px;
+    }
+
+    .main-container-profile-info {
+        width: 100%;
+        box-shadow: none;
+        
+    }
+
+    .main-container-profile-info-all div {
+        
+        width: 100%;
+    }
+
+    .aboutUserQR {
+        padding: 0;
+    }
 }
