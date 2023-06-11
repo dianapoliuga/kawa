@@ -36,10 +36,12 @@
                         </a>
                     </div>
                 </li>
+                <li>
+                    <button *ngIf="isLogged$ | async" class='header-main-items' id="item5" (click)="logOut()">
+                        LOGOUT
+                    </button>
+                </li>
             </ul>
-            <button *ngIf="isLogged$ | async" class='header-main-items' (click)="logOut()">
-                LOGOUT
-            </button>
         </div>
     </div>
 </mat-toolbar>
