@@ -3,8 +3,7 @@
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-start: 2;
-    min-height: 75vh;
-    
+    min-height: 75vh;  
 }
 
 .main-container-div-text {
@@ -23,4 +22,25 @@
     display: grid;
     row-gap: 75px;
     align-items: center;
+}
+
+@media (max-width: 640px) {
+    .main-container-div-img{
+        width: 200px;
+    }
+
+    .main-container-div {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: none;
+        grid-column-start: none;
+        min-height: 75vh;  
+    }
+
+    .content-container {
+        margin: 150px 0px;
+        display: grid;
+        row-gap: 75px;
+        align-items: center;
+    }
 }
