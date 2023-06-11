@@ -6,7 +6,5 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./loyaltyprogram-page.component.css']
 })
 export class LoyaltyprogramPageComponent {
-  ngOnInit() {
-    
-  }
+
 }

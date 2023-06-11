@@ -45,8 +45,6 @@
 
 .rightDiv {
     display: grid;
-    /* margin-left: 131px; */
-    /* margin-right: 131px; */
     margin-top: 92px;
     margin-bottom: 92px;
     align-items: center;
@@ -103,12 +101,10 @@
 
 
 .mainPage__slides {
-    /* margin: 100px; */
     display: block;
     width: 90vw;
     height: 40vh;
     margin: 0 auto;
-    /* margin-top: 150px; */
 }
 
 .slides {
@@ -123,7 +119,6 @@
     height: 100%;
     position: relative;
     transition: all 0.5s;
-    /* border-radius: 300px; */
 }
 
 .slides__part:hover {
@@ -158,8 +153,7 @@
 }
 
 .slides__overlay {
-    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 10%, #9CCC65 95%); */
-    background: #C2CFA0;
+    background: #9A9C8A;
     position: absolute;
     width: 100%;
     height: inherit;

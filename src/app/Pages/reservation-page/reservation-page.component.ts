@@ -9,7 +9,7 @@ export class ReservationPageComponent {
   public dateFilter(date: Date): boolean {
     const now = new Date();
     const tenDaysPast = new Date(now);
-    tenDaysPast.setDate(now.getDate() + 10);
+    tenDaysPast.setDate(now.getDate() + 15);
     const bookedDates: Date[] = [];
     return date > now && date < tenDaysPast && !bookedDates.some((d) => d.getDay() === date.getDay() && d.getMonth() === date.getMonth());
   }

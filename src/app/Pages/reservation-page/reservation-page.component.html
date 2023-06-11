@@ -16,17 +16,14 @@
                 <mat-form-field>
                     <mat-label>Оберіть дату</mat-label>
                     <input id="dateInput" matInput [matDatepicker]="picker" [matDatepickerFilter]="dateFilter">
-                    <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
                     <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
                     <mat-datepicker #picker startView="year"></mat-datepicker>
                 </mat-form-field>
             </div>
             <div class="main-container-reservation-form-name">
-                <!-- <p class="main-container-reservation-form-p">Ім'я:</p> -->
                 <input class="main-container-reservation-form-input" type="text" placeholder="Введіть своє ім'я">
             </div>
             <div class="main-container-reservation-form-phone">
-                <!-- <p class="main-container-reservation-form-p">Номер телефону:</p> -->
                 <input class="main-container-reservation-form-input" type="text" placeholder="Введіть номер телефону">
             </div>
             
