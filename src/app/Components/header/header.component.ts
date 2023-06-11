@@ -13,4 +13,13 @@ export class HeaderComponent {
   public logOut(): void {
     this.auth.logOut().subscribe();
   }
+
+  menu_icon_variable: boolean = false;
+  menuVariable: boolean = false;
+  ngOnInit(): void {
+  }
+  openMenu() {
+    this.menuVariable =! this.menuVariable;
+    this.menu_icon_variable =! this.menu_icon_variable;
+  }
 }
