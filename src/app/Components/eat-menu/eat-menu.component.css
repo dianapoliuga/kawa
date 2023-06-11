@@ -4,9 +4,11 @@
     margin-bottom: 80px;
 }
 
-.eatGridHelper {
-    grid-column-start: 3;
-    grid-column-end: 11;
+@media (min-width: 640px) {
+    .eatGridHelper {
+        grid-column-start: 3;
+        grid-column-end: 11;
+    }
 }
 
 .eatGrid-hoteat-items {
@@ -63,7 +65,6 @@
 
 .eatGrid-topButton-bottom {
     border: 0;
-    width: 221px;
     height: 25px;
     background: #C2CFA0;
     color: #FFFFFF;
@@ -75,7 +76,6 @@
 
 .eatGrid-bottomButton-bottom {
     border: 0;
-    width: 221px;
     height: 25px;
     background: #C2CFA0;
     color: #FFFFFF;
@@ -101,4 +101,31 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     margin-top: 37px;
+}
+
+@media (max-width: 640px) {
+        
+    .eatGrid-hoteat {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+
+    .eatGrid-coldeat {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+
+    .eatGrid-topButton-bottom {
+        grid-column-start: 5;
+        grid-column-end: 9;
+    }
+
+    .eatGrid-bottomButton-bottom {
+        grid-column-start: 5;
+        grid-column-end: 9;
+    }
 }

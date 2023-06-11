@@ -19,17 +19,13 @@
 
 }
 
-.drinkGrid-topButton-top:nth-child(1) {
-    grid-column-start: 5;
-    grid-column-end: 7;
-}
-
-.drinkGrid-topButton-top:nth-child(2) {
-    grid-column-start: 7;
-    grid-column-end: 9;
-}
-
 .active {
     background: #9DD016;
     color: white;
+}
+
+@media (max-width: 640px) {
+    .drinkGrid-topButton-top {
+        padding: 10px 70px;
+    }
 }
