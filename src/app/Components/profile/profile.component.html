@@ -10,7 +10,7 @@
                 <p>{{ currentUser?.displayName === 'diana' ? '149' : '0'}} бонусів</p>
             </div>
             <div class="aboutUserQR">
-                <qrcode  class="generatedQR" [qrdata]="currentUser?.phoneNumber" [width]="150" [errorCorrectionLevel]="'M'"></qrcode>
+                <qrcode  class="generatedQR" [qrdata]="currentUser?.phoneNumber" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
             </div>
         </div>
         <p class="main-container-profile-notification">Нагадування: не забувайте про наші тематичні вечірки та ігри!
