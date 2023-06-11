@@ -19,5 +19,32 @@
     padding-left: 100px;
     justify-self: center;
     align-self: center;
-    font-size: 32px;
+    /* font-size: 32px; */
+}
+
+@media (max-width: 640px) {
+    .mainPhoto {
+        display: none;
+    }
+
+    .leftDiv {
+        padding-top: 170px;
+        padding-bottom: 170px;
+        padding-left: 30px;
+        padding-right: 30px;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .aboutKawa {
+        font-weight: 300;
+        font-size: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-top: 1px solid #C2CFA0;
+        border-bottom: 1px solid #C2CFA0;
+        text-align: center;
+    }
+
+
 }

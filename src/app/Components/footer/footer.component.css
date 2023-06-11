@@ -88,3 +88,18 @@ footer {
     font-size: 22px;
 }
 
+@media (max-width: 640px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        align-items: center;
+        justify-items: center;
+        padding-top: 36px;
+        padding-bottom: 15px;
+    }
+
+    footer {
+        height: auto;
+    }
+}
