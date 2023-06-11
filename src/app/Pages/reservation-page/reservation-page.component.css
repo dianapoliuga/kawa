@@ -130,3 +130,36 @@ label:has(.people-button-choose:hover), label:has(.people-button-choose:checked)
 #dateInput {
     border-radius: 30px;
 }
+
+@media (max-width: 640px) {
+    .main-container-reservation {
+        padding-bottom: 150px;
+    }
+
+    .main-container-reservation-title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .main-container-reservation-form {
+        width: 300px;
+        height: 600px;
+    }
+
+    .main-container-reservation-form-p {
+        font-size: 15px;
+    }
+
+    .main-container-reservation-form-people {
+        flex-direction: column;
+    }
+
+    .main-container-reservation-form-date {
+        flex-direction: column;
+    }
+
+    .main-container-reservation-form-input {
+        width: 250px;
+        height: 40px;
+    }
+}
