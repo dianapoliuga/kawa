@@ -93,9 +93,6 @@ footer {
         display: flex;
         flex-direction: column;
         row-gap: 40px;
-        align-items: center;
-        justify-items: center;
-        padding-top: 36px;
         padding-bottom: 15px;
     }
 

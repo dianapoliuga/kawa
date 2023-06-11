@@ -7,11 +7,14 @@
     border-bottom: 1px solid #C2CFA0;
 }
 
-.mainGrid {
+@media (min-width: 640px) {
+    .mainGrid {
     display: flex;
     column-gap: 88px;
     min-height: 75vh;
+    }
 }
+
 
 .leftDiv {
     padding-top: 170px;
